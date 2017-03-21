@@ -42,7 +42,7 @@ export class TodoDataService {
       .pop();
   }
 
-  toogleTodoComplete(todo: Todo){
+  toggleTodoComplete(todo: Todo){
     let updatedTodo = this.updateTodoById(todo.id,{
       finish: !todo.finish
     });

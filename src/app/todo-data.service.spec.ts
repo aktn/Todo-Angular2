@@ -89,9 +89,9 @@ describe('TodoDataService', () => {
       let todo = new Todo({title:'Hi', finish: false});
       service.addTodo(todo);
 
-      let updatedTodo = service.toogleTodoComplete(todo);
+      let updatedTodo = service.toggleTodoComplete(todo);
       expect(updatedTodo.finish).toEqual(true);
-      service.toogleTodoComplete(todo);
+      service.toggleTodoComplete(todo);
       expect(updatedTodo.finish).toEqual(false);
     }));
   });
